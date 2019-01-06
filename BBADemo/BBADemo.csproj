@@ -54,11 +54,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Calculation.cs" />
     <Compile Include="ICalculation.cs" />
-    <Compile Include="MyToggle.cs" />
     <Compile Include="NewCalculation.cs" />
-    <Compile Include="OldCalculation.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

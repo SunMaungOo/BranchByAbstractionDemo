@@ -12,20 +12,7 @@ namespace BBADemo
     {
         static void Main(string[] args)
         {
-            Features.Are.AlwaysEnabled();
-
-            var toggle = new MyToggle();
-
-            ICalculation calculation = null;
-
-            if(toggle.Is().Disabled)
-            {
-                calculation = new OldCalculation();
-            }
-            else
-            {
-                calculation = new NewCalculation();
-            }
+            ICalculation calculation = new NewCalculation();
 
             int a = 10;
 
