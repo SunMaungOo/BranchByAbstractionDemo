@@ -20,7 +20,7 @@ namespace BBADemo.Tests
 
             int b = 5;
 
-            int actual = Calculation.Calculate(a, b);
+            int actual = new OldCalculation().Calculate(a, b);
 
             Assert.AreEqual(expected, actual);
         }
