@@ -12,7 +12,7 @@ namespace BBADemo.Tests
     public class CalculationTests
     {
         [TestMethod()]
-        public void CalculateTest()
+        public void OldCalculateTest()
         {
             int expected = 15;
 
@@ -21,6 +21,20 @@ namespace BBADemo.Tests
             int b = 5;
 
             int actual = new OldCalculation().Calculate(a, b);
+
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod()]
+        public void NewCalculateTest()
+        {
+            int expected = 5;
+
+            int a = 10;
+
+            int b = 5;
+
+            int actual = new NewCalculation().Calculate(a, b);
 
             Assert.AreEqual(expected, actual);
         }
